@@ -3,8 +3,8 @@
 var game = new Phaser.Game(850, 850, Phaser.AUTO, '');
 var game_state = {};
 
-game_state.main = function() {};
-game_state.main.prototype = {
+game_state.Stage1Copy = function() {};
+game_state.Stage1Copy.prototype = {
 
     preload: function() {
         game.load.image('sky', 'assets/backback.png');
@@ -163,5 +163,4 @@ game_state.main.prototype = {
 
     },
 };
-game.state.add('main', game_state.main);
-game.state.start('main');
+game.state.add('Stage1Copy', game_state.Stage1Copy);
